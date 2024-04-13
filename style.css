@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e9dd;
+}
+
+main {
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 38.2rem;
+  padding: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  /* line-height: 1.2rem;  */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.balance-container {
+  background-color: #ec775f;
+  color: #ffff;
+  padding: 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  transition: all 0.9s;
+  /* width: 100%; */
+}
+
+.balance-info {
+  flex-direction: column;
+}
+
+.balance-amt {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.chart-container {
+  background-color: #ffff;
+  border-radius: 2rem;
+  padding: 2.4rem;
+  transition: all 0.9s;
+}
+
+.hr {
+  margin: 2.5rem 0;
+  border: 1px solid #f8e9dd;
+  /* border-color: #f8e9dd;/ */
+}
+
+.chart-info {
+  justify-content: space-between;
+  margin: 1rem 0 2rem 0;
+  /* height: fit-content; */
+  color: #9992ab;
+}
+
+.chart-info--container {
+  flex-direction: column;
+  /* gap: rem; */
+}
+
+.chart-amt {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #3b312b;
+}
+
+.chart-info div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.chart-info div:last-child p:first-child {
+  color: #3b312b;
+  font-weight: 700;
+}
+
+.balance-animation:hover {
+  animation: spin 1.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+/* animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .chart-amt {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
