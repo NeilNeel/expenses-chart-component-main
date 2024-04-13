@@ -24,7 +24,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [🌐](https://neilneel.github.io/sunnyside-agency-landing-page-main/)
+- Live Site URL: [🌐](https://neilneel.github.io/expenses-chart-component-main/)
 
 ## Author
 
