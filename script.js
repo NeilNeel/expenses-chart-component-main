@@ -88,4 +88,4 @@ const chartObserver = new IntersectionObserver(revealElement, {
 
 balObserver.observe(balanceEl);
 // chartObserver.observe(chartEl);
-setTimeout(() => chartObserver.observe(chartEl), 300);
+// setTimeout(() => chartObserver.observe(chartEl), 300);
